@@ -1,0 +1,57 @@
+<form action="" method="post">
+  <label>ID</label><br>
+  <input type="number"name="id"><br>
+  <label>Name</label><br>
+  <input type="text"name="name"><br>
+  <label>Roll</label><br>
+  <input type="number"name="roll"><br>
+  <label>Email</label><br>
+  <input type="email"name="email"><br>
+  <label>Batch</label><br>
+  <input type="text"name="batch"><br>
+  <label>Contact</label><br>
+  <input type="number"name="contact"><br>
+  <label>DOB</label><br>
+  <input type="date" name="dob"placeholder="dd-mm-yyyy" value=""min="1997-01-01" max="2030-12-31"><br>
+  <label>Department</label><br>
+  <input type="text"name="dp"><br>
+  <label>REG</label><br>
+  <input type="number"name="reg"><br>
+  <label>Address</label><br>
+  <input type="text"name="address"><br>
+  
+  
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<?php
+	$ID=$_POST['id'];
+	echo "ID: ".$ID."<br>";
+	$Name=$_POST['name'];
+	echo "Name: ".$Name."<br>";
+	$Roll=$_POST['roll'];
+	echo "Roll: ".$Roll."<br>";
+	$Email=$_POST['email'];
+	echo "Email: ".$Email."<br>";
+	$Batch=$_POST['batch'];
+	echo "Batch: ".$Batch."<br>";
+	$Contact=$_POST['contact'];
+	echo "Contact: ".$Contact."<br>";
+	$DOB=$_POST['dob'];
+	echo "DOB: ".$DOB."<br>";
+	$Department=$_POST['dp'];
+	echo "Department: ".$Department."<br>";
+	$REG=$_POST['reg'];
+	echo "REG: ".$REG."<br>";
+	$Address=$_POST['address'];
+	echo "Address: ".$Address;
+	
+	
+
+
+
+
+
+
+
+?>
