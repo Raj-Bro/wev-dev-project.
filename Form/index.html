@@ -1,0 +1,179 @@
+<?php include("connection.php");?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="heading">
+        <center><h1>REGISTRATION FORM</h1></center>
+      </header>
+      <section class="form-section">
+        <form action="" method="POST">
+          <div class="inline-form">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" placeholder="Moin" required id="first-name" name="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                placeholder="Hossain"
+                required
+                id="last-name"
+                name="last-name"
+              />
+            </div>
+          </div>
+          <div class="inline-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                required
+                placeholder="user@example.com"
+                id="emil"
+                name="emil"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                required
+                placeholder="+8801647615608"
+                id="phone"
+                name="phone"
+              />
+            </div>
+          </div>
+          <div class="inline-form">
+            <div class="form-group">
+              <label for="contry">Contry</label>
+              <select id="contry" name="contry">
+                <option value="Bangladesh" selected>Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Srilanka">Srilanka</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <select id="city" name="city">
+                <option value="Dhaka" selected>Dhaka</option>
+                <option value="Kushtia">Kushtia</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Mumbai">Mumbai</option>
+              </select>
+            </div>
+          </div>
+          <div class="inline-form">
+            <div class="form-group">
+              <label for="birthday">Birthday</label>
+              <input type="date" name="birthday" />
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                placeholder="Dhanmondi-15,32/C"
+                name="address"
+              />
+            </div>
+          </div>
+
+          <!-- Gender Start -->
+          <div class="inline-form">
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="radio-inline-group">
+                <div class="radio-inline">
+                  <input type="radio" value="Male" id="male" name="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div class="radio-inline">
+                  <input
+                    type="radio"
+                    value="Female"
+                    id="female"
+                    name="female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+            <!-- Relaigion -->
+            <div class="form-group">
+              <label>Religion</label>
+              <div class="radio-inline-group">
+                <div class="radio-inline">
+                  <input type="radio" name="Islam" />
+                  <label for="Islam">Islam</label>
+                </div>
+                <div class="radio-inline">
+                  <input type="radio" name="Hindu" />
+                  <label for="Hindu">Hindu</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gender Close -->
+
+          <!-- Short Bio start -->
+          <div class="form-group bio">
+            <label for="bio">Short bio</label>
+            <textarea id="bio" name="bio"></textarea>
+          </div>
+          <!-- Short Bio Close -->
+
+          <!-- password Start -->
+          <div class="inline-form">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                required
+                placeholder="Password"
+                id="password"
+                name="password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                required
+                placeholder="Password"
+                id="password2"
+                name="password2"
+              />
+            </div>
+          </div>
+          <!-- password Close -->
+
+          <div class="form-group">
+            <div class="radio-inline">
+              <input type="checkbox" name="" id="aggreement" />
+              <label for="aggreement">I accpet terms and conditions</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-reset" type="reset">Reset</button>
+            <button class="btn btn-submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
